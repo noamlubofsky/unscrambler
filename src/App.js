@@ -1,7 +1,4 @@
-import logo from './logo.svg';
-import './App.css';
-import Unscrambler from './components/Unscrambler'
-
+import Unscrambler from "./components/Unscrambler";
 
 function App() {
   return (

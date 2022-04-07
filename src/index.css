@@ -1,67 +1,234 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  /* user-select: none; */
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #4b665f;
-
 }
 
+.topForm {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none;
+}
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
 
-.pushy__btn {
+.show__btn {
   -webkit-font-smoothing: antialiased;
-justify-content: center;
-text-align: center;
-align-items: center;
+  height: 10vh;
+  width: 50vw;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
   margin-right: 5px;
   margin-left: 5px;
-  margin-top: 5px;
+  margin-top: 55px;
   margin-bottom: 5px;
-  font-family: 'Cardo', serif;
-height: auto;
-  text-decoration: none;  
+  font-family: "Cardo", serif;
+  text-decoration: none;
   text-transform: uppercase;
-letter-spacing: 1px;
+  letter-spacing: 1px;
   text-rendering: optimizeLegibility;
   display: inline-block;
   border: none;
   /* background: rgb(37, 38, 51); */
-background-color: #365f46;
-  border-radius: .3em;
-  -webkit-box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.1), inset 0 -0.25em 0 rgba(0, 0, 0, 0.25), 0 0.25em 0.25em rgba(0, 0, 0, 0.05);
-          box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.1), inset 0 -0.25em 0 rgba(0, 0, 0, 0.25), 0 0.25em 0.25em rgba(0, 0, 0, 0.05);
+  background-color: #365f46;
+  border-radius: 0.3em;
+  -webkit-box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.1),
+    inset 0 -0.25em 0 rgba(0, 0, 0, 0.25), 0 0.25em 0.25em rgba(0, 0, 0, 0.05);
+  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.1),
+    inset 0 -0.25em 0 rgba(0, 0, 0, 0.25), 0 0.25em 0.25em rgba(0, 0, 0, 0.05);
   color: rgb(27, 41, 29);
   cursor: pointer;
-  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto, Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-weight: 400;
   line-height: 1.5;
-  padding: .5em 1.5em .75em;
+  padding: 0.5em 1.5em 0.75em;
   position: relative;
   vertical-align: middle;
   -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none; }
-  .pushy__btn:active {
-    -webkit-box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.2), inset 0 2px 0 rgba(255, 255, 255, 0.1), inset 0 0.25em 0.5em rgba(0, 0, 0, 0.05);
-            box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.2), inset 0 2px 0 rgba(255, 255, 255, 0.1), inset 0 0.25em 0.5em rgba(0, 0, 0, 0.05);
-    margin-top: .25em;
-    padding-bottom: .5em; 
-  }
-    
-  .pushy__btn:active, .pushy__btn:focus {
-    outline: none; 
-    -webkit-touch-callout: none; /* iOS Safari */
-    -webkit-user-select: none; /* Safari */
-     -khtml-user-select: none; /* Konqueror HTML */
-       -moz-user-select: none; /* Old versions of Firefox */
-        -ms-user-select: none; /* Internet Explorer/Edge */
-            user-select: none; /* Non-prefixed version, currently
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.show__btn:active {
+  -webkit-box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.2),
+    inset 0 2px 0 rgba(255, 255, 255, 0.1),
+    inset 0 0.25em 0.5em rgba(0, 0, 0, 0.05);
+  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.2),
+    inset 0 2px 0 rgba(255, 255, 255, 0.1),
+    inset 0 0.25em 0.5em rgba(0, 0, 0, 0.05);
+  /* margin-top: 0.25em;
+  padding-bottom: 0.5em; */
+}
+
+.show__btn:active,
+.show__btn:focus {
+  outline: none;
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently
                                   supported by Chrome, Opera and Firefox */
-  }
+}
+
+.pushy__btn {
+  -webkit-font-smoothing: antialiased;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  margin-right: 5px;
+  margin-left: 5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-family: "Cardo", serif;
+  height: auto;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-rendering: optimizeLegibility;
+  display: inline-block;
+  border: none;
+  /* background: rgb(37, 38, 51); */
+  background-color: #365f46;
+  border-radius: 0.3em;
+  -webkit-box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.1),
+    inset 0 -0.25em 0 rgba(0, 0, 0, 0.25), 0 0.25em 0.25em rgba(0, 0, 0, 0.05);
+  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.1),
+    inset 0 -0.25em 0 rgba(0, 0, 0, 0.25), 0 0.25em 0.25em rgba(0, 0, 0, 0.05);
+  color: rgb(27, 41, 29);
+  cursor: pointer;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-weight: 400;
+  line-height: 1.5;
+  padding: 0.5em 1.5em 0.75em;
+  position: relative;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.pushy__btn:active {
+  -webkit-box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.2),
+    inset 0 2px 0 rgba(255, 255, 255, 0.1),
+    inset 0 0.25em 0.5em rgba(0, 0, 0, 0.05);
+  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.2),
+    inset 0 2px 0 rgba(255, 255, 255, 0.1),
+    inset 0 0.25em 0.5em rgba(0, 0, 0, 0.05);
+  margin-top: 0.25em;
+  padding-bottom: 0.5em;
+}
+
+.pushy__btn:active,
+.pushy__btn:focus {
+  outline: none;
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Opera and Firefox */
+}
+
+.logo {
+  width: 90vw;
+  margin-top: 10px;
+}
+
+.roses {
+  font-size: 2em;
+  text-align: center;
+  /* height:90vh; */
+  /* line-height: 90vh; */
+  color: #fcedd8;
+  /* background: #d52e3f; */
+  font-family: "Niconne", cursive;
+  font-weight: 700;
+  text-shadow: 5px 5px 0px #eb452b, 10px 10px 0px #efa032, 15px 15px 0px #46b59b,
+    20px 20px 0px #017e7f, 25px 25px 0px #052939, 30px 30px 0px #c11a2b,
+    35px 35px 0px #c11a2b, 40px 40px 0px #c11a2b, 45px 45px 0px #c11a2b;
+}
+
+h1 {
+  text-transform: uppercase;
+  word-break: break-all;
+  margin-top: 7vh;
+  margin-bottom: 7vh;
+  font-family: "Courier New", monospace;
+  /* text-shadow: rgb(13, 77, 66) 1px 0 10px; */
+  font-smooth: always;
+  color: rgba(2, 75, 0, 0.973);
+  /* background: rgb(26, 26, 26); */
+  text-shadow: rgba(255, 255, 255, 0.808) 0px 0px 15px,
+    rgba(255, 255, 255, 0.5) 0px 0px 10px;
+  --darkreader-inline-color: rgba(232, 230, 227, 0.514);
+  --darkreader-inline-bgimage: initial;
+  --darkreader-inline-bgcolor: #141516;
+}
+
+h2 {
+  text-transform: uppercase;
+  font-family: "Courier New", monospace;
+}
+
+h3 {
+  text-transform: uppercase;
+  font-family: "Courier New", monospace;
+}
